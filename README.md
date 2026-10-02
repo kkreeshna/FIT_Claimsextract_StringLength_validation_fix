@@ -1,0 +1,2 @@
+# FIT_Claimsextract_StringLength_validation_fix
+Thsi is to fix the issue: The CC ClaimsFeed queue is being suspended when processing a message containing a data field that exceeds the configured string length limit.  Currently, when a record contains a string value longer than the permitted field length, the message processing fails and causes the entire queue to stop/suspend rather than isolating the failed message and allowing subsequent messages to continue processing.
